@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Praktikum 9</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+</head>
+<body>
+
+	<div>
+		<form method="POST" action="simpan_kontak.php">
+				<table cellpadding='0'>
+					<tr>
+						<th colspan="2">Form Pendaftaran Kontak</th>
+					</tr>
+					<tr>
+						<th>Nama</th>
+						<td><input type="text" name="nama" size="35" maxlength="30" required></td>
+					</tr>
+					<tr>
+						<th>Jenis Kelamin</th>
+						<td>
+							<input type="radio" name="jkel" value="Laki-Laki" required> Laki-Laki
+							<input type="radio" name="jkel" value="Perempuan" required> Perempuan
+						</td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td><input type="email" name="email" size="35" maxlength="40" required></td>
+					</tr>
+					<tr>
+						<th>Alamat</th>
+						<td><textarea name="alamat" rows="2" cols="25" maxlength="50" required></textarea></td>
+					</tr>
+					<tr>
+						<th>Kota</th>
+						<td><input type="text" name="kota" size="20" maxlength="20" required></td>
+					</tr>
+					<tr>
+						<th>Pesan</th>
+						<td><textarea name="pesan" rows="2" cols="50" required></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" name="btn_simpan" value="Simpan" class="btn simpan">
+							<input type="reset" name="btn_reset" value="Reset" class="btn reset">
+						</td>
+					</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>
